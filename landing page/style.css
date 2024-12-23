@@ -1,0 +1,378 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trirong', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #000000;
+}
+
+/* Sticky Navigation */
+#stickyNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    z-index: 1000;
+}
+
+#stickyNav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#stickyNav li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+#stickyNav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+#stickyNav a:hover {
+    color: #ff5722;
+}
+
+/* Header Section */
+header {
+    background-image: url('back.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 60px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 4vw; /* Dynamic font size for responsive design */
+}
+
+header .color-1 {
+    color: #ffffff; /* White */
+}
+
+header .color-2 {
+    color: #ffffff; /* Black */
+}
+
+header p {
+    font-size: 1.5em; /* Increase the font size of the subheading */
+    color: #f5f3f3; /* Light color for readability */
+    margin-top: 10px; /* Add some space between the title and the subheading */
+}
+/* About Section */
+.about {
+    padding: 20px 10px;
+    text-align: center;
+    color: #f5f3f3;
+    font-size: large;
+}
+
+.cta-button {
+    background: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #e64a19;
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Search Bar */
+.search {
+    padding: 20px;
+    text-align: center;
+}
+
+.search input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 500px;
+}
+
+/* Featured Courses Section */
+.featured {
+    padding: 40px 20px;
+    text-align: center;
+    
+}
+.featured h2 {
+    color: white;
+}
+
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.course {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.course:hover {
+    transform: translateY(-10px) rotate(2deg); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.enroll-button {
+    background: #ed38de;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.enroll-button:hover {
+    background: #d590ce;
+}
+
+/* Categories Section */
+.categories {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.categories h2 {
+    color: #ffffff; /* White */
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.category {
+    background: #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: normal;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.category:hover {
+    background: #68edb8;
+    color: #fff;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Contact Section */
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #f5f3f3; /* White */
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.contact input:focus, .contact textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.4);
+}
+
+.contact button {
+    background: #4a90e2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: #357ab8;
+}
+
+
+/* Newsletter Section */
+.newsletter {
+    background: #a2a2a2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.newsletter h2 {
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.newsletter form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px; /* Increased width for better display */
+}
+
+.newsletter button {
+    background: #4a90e2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter button:hover {
+    background: #357ab8;
+}
+
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    display: none;
+    cursor: pointer;
+}
+
+#backToTop:hover {
+    background-color: #e64a19;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #e6c373;
+    color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 50px 20px;
+    }
+
+    .course-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .category-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category {
+        padding: 10px 15px;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-button {
+        font-size: 1em;
+    }
+
+    .category {
+        font-size: 1em;
+    }
+}

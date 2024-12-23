@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Online Courses</title>
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav id="stickyNav">
+        <ul>
+            <li><a href="#featured">Featured Courses</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1><span class="color-1">Welcome to Our Online</span> <span class="color-2">Courses</span></h1>
+        <p>Your one-stop platform to learn and grow!</p>
+        <a href="#featured" class="cta-button">Start Learning</a>
+    </header>
+
+    <!-- Search Bar for Courses -->
+    <section class="search">
+        <input type="text" id="searchInput" placeholder="Search for courses..." onkeyup="filterCourses()">
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about education and committed to providing a diverse range of courses for learners of all backgrounds. Our mission is to empower individuals with the knowledge and skills they need to succeed in their personal and professional lives. We aim to foster a vibrant learning community where students can grow, collaborate, and reach their full potential.</p>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section class="featured" id="featured">
+        <h2>Featured Courses</h2>
+        <div class="course-list">
+            <div class="course">
+                <img src="Intro-to-Programming.webp" alt="Course Title 1">
+                <h3>Introduction to Programming</h3>
+                <p>Instructor: Jane Doe</p>
+                <p>Price: $49.99</p>
+                <a href="#" class="enroll-button">Enroll Now</a>
+            </div>
+            <div class="course">
+                <img src="data.jpg" alt="Course Title 2">
+                <h3>Data Science for Beginners</h3>
+                <p>Instructor: John Smith</p>
+                <p>Price: $59.99</p>
+                <a href="#" class="enroll-button">Enroll Now</a>
+            </div>
+            <div class="course">
+                <img src="digital1.jpg" alt="Course Title 3">
+                <h3>Digital Marketing 101</h3>
+                <p>Instructor: Sarah Lee</p>
+                <p>Price: $39.99</p>
+                <a href="#" class="enroll-button">Enroll Now</a>
+            </div>
+            <div class="course">
+                <img src="web.jpg" alt="Course Title 4">
+                <h3>Web Development Mastery</h3>
+                <p>Instructor: Michael Brown</p>
+                <p>Price: $69.99</p>
+                <a href="#" class="enroll-button">Enroll Now</a>
+            </div>
+            <div class="course">
+                <img src="machine.jpeg" alt="Course Title 5">
+                <h3>Machine Learning Essentials</h3>
+                <p>Instructor: Emily Johnson</p>
+                <p>Price: $79.99</p>
+                <a href="#" class="enroll-button">Enroll Now</a>
+            </div>
+            <div class="course">
+                <img src="personal.webp" alt="Course Title 6">
+                <h3>Personal Finance Management</h3>
+                <p>Instructor: James Williams</p>
+                <p>Price: $29.99</p>
+                <a href="#" class="enroll-button">Enroll Now</a>
+            </div>
+            <div class="course">
+                <img src="cloud.jpg" alt="Course Title 7">
+                <h3>Cloud Computing with AWS</h3>
+                <p>Instructor: Laura Williams</p>
+                <p>Price: $99.99</p>
+                <a href="#" class="enroll-button">Enroll Now</a>
+            </div>
+            <div class="course">
+                <img src="photo.webp" alt="Course Title 8">
+                <h3>Photography Basics</h3>
+                <p>Instructor: Alex Green</p>
+                <p>Price: $49.99</p>
+                <a href="#" class="enroll-button">Enroll Now</a>
+            </div>            
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2>Browse by Category</h2>
+        <div class="category-list">
+            <div class="category">Programming</div>
+            <div class="category">Data Science</div>
+            <div class="category">Marketing</div>
+            <div class="category">Business</div>
+            <div class="category">Cloud</div>
+            <div class="category">Photoshop</div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="integer" placeholder="Your Contact no" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section class="newsletter" id="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get the latest course updates, offers, and more!</p>
+        <form>
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit">Subscribe</button>
+            <div id="successMessage" style="display:none;">Thank you for subscribing!</div>
+        </form>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
+
+    <!-- Course Details Modal -->
+    <div id="courseModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Course Details</h2>
+            <p id="courseDetails"></p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Online Courses. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
